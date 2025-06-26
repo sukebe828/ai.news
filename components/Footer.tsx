@@ -38,6 +38,23 @@ export function FooterImpl() {
       <div className={styles.copyright}>
         Copyright {currentYear} {config.author}
       </div>
+        {/* Ko-fi 捐款按鈕 */}
+  <a
+    href="https://ko-fi.com/meow828"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{
+      display: 'inline-block',
+      marginTop: '1rem'
+    }}
+  >
+    <img
+      height="36"
+      style={{ border: '0px', height: '36px' }}
+      src="https://storage.ko-fi.com/cdn/kofi5.png"
+      alt="Buy Me a Coffee at ko-fi.com"
+    />
+  </a>
 
       <div className={styles.settings}>
         {hasMounted && (
