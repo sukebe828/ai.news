@@ -14,10 +14,20 @@ import { useDarkMode } from '@/lib/use-dark-mode'
 
 import styles from './styles.module.css'
 
+// TODO: merge the data and icons from PageSocial with the social links in Footer
+
 export function FooterImpl() {
   const [hasMounted, setHasMounted] = React.useState(false)
   const { isDarkMode, toggleDarkMode } = useDarkMode()
   const currentYear = new Date().getFullYear()
+
+  const onToggleDarkMode = React.useCallback(
+    (e: any) => {
+      e.preventDefault()
+      toggleDarkMode()
+    },
+    [toggleDarkMode]
+  )
 
   React.useEffect(() => {
     setHasMounted(true)
@@ -130,3 +140,5 @@ export function FooterImpl() {
     </footer>
   )
 }
+
+export const Footer = React.memo(FooterImpl)
