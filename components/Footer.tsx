@@ -8,12 +8,12 @@ import { FaZhihu } from '@react-icons/all-files/fa/FaZhihu'
 import { IoMoonSharp } from '@react-icons/all-files/io5/IoMoonSharp'
 import { IoSunnyOutline } from '@react-icons/all-files/io5/IoSunnyOutline'
 import * as React from 'react'
-import Script from 'next/script'
 
 import * as config from '@/lib/config'
 import { useDarkMode } from '@/lib/use-dark-mode'
 
 import styles from './styles.module.css'
+import Script from 'next/script'
 
 // TODO: merge the data and icons from PageSocial with the social links in Footer
 
@@ -44,6 +44,13 @@ export function FooterImpl() {
   }, [])
 
   return (
+        <>
+      <Script
+        src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"
+        strategy="afterInteractive"
+      />
+
+
     <footer className={styles.footer}>
       <div className={styles.copyright}>
         Copyright {currentYear} {config.author}
@@ -148,6 +155,7 @@ export function FooterImpl() {
         )}
       </div>
     </footer>
+  </>
   )
 }
 
