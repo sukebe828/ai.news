@@ -60,6 +60,10 @@ export default siteConfig({
     {
       title: 'Contact1',
       pageId: '6a29ebcb935a4f0689fe661ab5f3b8d1'
-    }
+    },
+  {
+    title: '☕ Ko-fi',
+    url: 'https://ko-fi.com/meow828' // ← 換成你自己個頁面
+  }
    ]
 })
