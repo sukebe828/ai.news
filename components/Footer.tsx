@@ -8,6 +8,7 @@ import { FaZhihu } from '@react-icons/all-files/fa/FaZhihu'
 import { IoMoonSharp } from '@react-icons/all-files/io5/IoMoonSharp'
 import { IoSunnyOutline } from '@react-icons/all-files/io5/IoSunnyOutline'
 import * as React from 'react'
+import Script from 'next/script'
 
 import * as config from '@/lib/config'
 import { useDarkMode } from '@/lib/use-dark-mode'
@@ -31,6 +32,15 @@ export function FooterImpl() {
 
   React.useEffect(() => {
     setHasMounted(true)
+      // 初始化 Ko-fi widget
+  if (typeof window !== 'undefined' && (window as any).kofiWidgetOverlay) {
+    (window as any).kofiWidgetOverlay.draw('meow828', {
+      type: 'floating-chat',
+      'floating-chat.donateButton.text': 'Donate',
+      'floating-chat.donateButton.background-color': '#00b9fe',
+      'floating-chat.donateButton.text-color': '#fff'
+    })
+  }
   }, [])
 
   return (
