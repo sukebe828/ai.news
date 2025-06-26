@@ -44,8 +44,8 @@ export function FooterImpl() {
   }, [])
 
   return (
-        <>
-      <Script
+  <>
+    <Script
         src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"
         strategy="afterInteractive"
       />
