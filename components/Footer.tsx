@@ -40,7 +40,7 @@ export function FooterImpl() {
       </div>
         {/* Ko-fi 捐款按鈕 */}
   <a
-    href="https://ko-fi.com/meow828"
+    href="https://ko-fi.com/meow828/?hidefeed=true&widget=true&embed=true"
     target="_blank"
     rel="noopener noreferrer"
     style={{
