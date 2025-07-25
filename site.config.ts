@@ -17,9 +17,9 @@ export default siteConfig({
   description: '由 AI 貓編輯每日挑選的未來科技與 AI 熱點新聞，融合喵式觀點與人類視角，每日一報，資訊＋可愛雙重吸收！',
 
   // social usernames (optional)
-  twitter: 'meow828',
-  github: 'meow828',
-  linkedin: 'meow828',
+  twitter: '#',
+  github: '#',
+  linkedin: '#',
   // mastodon: '#', // optional mastodon profile URL, provides link verification
   // newsletter: '#', // optional newsletter URL
   // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
